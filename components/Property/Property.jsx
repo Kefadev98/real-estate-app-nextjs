@@ -12,21 +12,14 @@ const Property = ({ property }) => {
   return (
     //passHref - forces Link to send the href property to its child. Defaults to false
     <Link href={`/property/${property.externalID}`} passHref>
-      <Flex
-        flexWrap="wrap"
-        w="420px"
-        p="5"
-        paddingTop="0px"
-        justifyContent="flex-start"
-        cursor="pointer"
-      >
+      <Flex flexWrap="wrap" maxWidth="420px" p="5" cursor="pointer">
         <Box>
           <Image
             src={property.coverPhoto ? property.coverPhoto.url : DefaultImage}
             width="0"
             height="0"
             sizes="100vw"
-            style={{ width: "400px", height: "260px" }}
+            style={{ width: "350px", height: "230px" }}
             alt="/"
           />
         </Box>
